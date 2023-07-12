@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:meal_monkey/config/theme.dart';
 import 'package:meal_monkey/constants/colors.dart';
+import 'package:meal_monkey/screens/on_boarding.dart';
 import 'package:meal_monkey/widgets/button_with_icon.dart';
 import 'package:meal_monkey/widgets/button_with_text.dart';
 import 'package:meal_monkey/widgets/text_form_field.dart';
@@ -62,7 +63,10 @@ class _LoginScreenState extends State<LoginScreen> {
                       const SizedBox(height: 20),
                       ButtonWithText(
                         buttonText: 'Login',
-                        buttonOnPressed: () {},
+                        buttonOnPressed: () {
+                          Navigator.pushNamedAndRemoveUntil(
+                              context, '/onBoarding', (route) => false);
+                        },
                       ),
                       const SizedBox(height: 20),
                       InkWell(

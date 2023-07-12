@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
         '/ResetPasswordWithEmail': (context) => const ResetPasswordWithEmail(),
         '/ResetPasswordWithPhone': (context) => const ResetPasswordWithPhone(),
         '/createNewPassword': (context) => const CreatenewPassword(),
-        '/onBoarding': (context) => const OnBoarding(),
+        '/onBoarding': (context) => OnBoarding(),
       },
     );
   }
